@@ -10,11 +10,20 @@ setTimeout(function sunrise () {
 }, 0);
 </script>
 
+<script type="text/javascript">
+function chordsequence() {
+
+    var w = window.innerWidth;
+    var newpage = "chordsequence?width=" + w;
+    window.location.assign(newpage);
+}
+</script>
+
 <div class="default-page">
     <div class="header">
         <h1 id="main-title" class="container"><%= __('Chord Sequence') %></h1>
         <h3 class="container">Edit ChordPro songs online</h3>
-        <p align="center"><button type="button" onclick="window.location.href='chordsequence'" class="btn btn-warning">Try it now</button></p>
+        <p align="center"><button type="button" onclick="chordsequence();" class="btn btn-warning">Try it now</button></p>
     </div>
     <div class="main container clearfix">
         <ul class="getting-started">
