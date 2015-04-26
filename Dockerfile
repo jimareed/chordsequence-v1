@@ -6,5 +6,5 @@ RUN mkdir /opt; cd /opt; npm install sails -g; sails new chordsequence; cd /opt/
 #RUN cd /src; npm install; chmod 777 /start.sh
 EXPOSE 1337
 # CMD ["node" , "/src/index.js"]
-CMD ["cd" , "/opt/chordsequence"]
+WORKDIR "/opt/chordsequence"
 CMD ["sails" , "lift"]
