@@ -1,6 +1,6 @@
 FROM node:0.12.2
 ENV VERSION=v0.12.2 CMD=node DOMAIN=nodejs.org
-RUN mkdir /opt; cd /opt; npm install sails -g; sails new chordsequence; cd /opt/chordsequence
+RUN mkdir /opt; cd /opt; npm install sails -g; sails new chordsequence; rm -f /opt/chordsequence/views/homepage.ejs
 ADD src /src
 RUN \cp -urf /src/* /opt/chordsequence
 #ADD ./start.sh /start.sh
