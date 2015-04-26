@@ -15,6 +15,12 @@ function chordsequence() {
 
     var w = window.innerWidth;
     var newpage = "chordsequence?width=" + w;
+    var isiPad = navigator.userAgent.match(/iPad/i) != null;
+
+    if (isiPad) {
+        newpage = "chordsequence";
+    }
+    
     window.location.assign(newpage);
 }
 </script>
