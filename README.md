@@ -4,8 +4,7 @@ Chord Sequence is a simple editor for editing guitar songs in the ChordPro forma
 
 It's organized into two services a frontend node.js service and a backend tomcat service:
 
-![alt tag](http://jimareed/chordsequence-architecture.png)
-
+![Alt text](/doc/architecture.png "Chord Sequence Architecture")
 
 
 ## run docker image
