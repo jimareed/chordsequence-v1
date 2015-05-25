@@ -1,5 +1,11 @@
 # chordsequence
 
+Chord Sequence is a simple editor for editing guitar songs in the ChordPro format (http://chordsequence.com).  
+
+It's organized into two services a frontend node.js service and a backend tomcat service:
+
+![alt tag](http://jimareed/chordsequence-architecture.png)
+
 
 
 ## run docker image
