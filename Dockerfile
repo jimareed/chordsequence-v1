@@ -8,5 +8,4 @@ RUN \cp -urf /src/* /opt/chordsequence
 #RUN cd /src; npm install; chmod 777 /start.sh
 EXPOSE 1337
 WORKDIR /opt/chordsequence
-CMD ["cat" , "views/homepage.ejs"]
 CMD ["sails" , "lift"]
