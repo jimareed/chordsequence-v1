@@ -9,3 +9,32 @@ It's organized into two services, a frontend node.js service (chordsequence), an
 
 ![Alt text](/doc/architecture.png "Chord Sequence Architecture")
 
+
+## nginx setup
+
+```
+sudo -i
+yum install nginx
+service nginx start
+cd /etc/nginx
+vi nginx.conf
+add proxy_pass:
+  server {
+  ...
+  location / {
+    proxy_pass http://localhost:8080;
+  }
+
+  location /chordsequence {
+   proxy_pass http://{chordsequence-platform-host}:8080/chordsequence;
+  }
+
+  }
+
+ service nginx restart
+```
+## docker-deployer setup
+
+```
+ follow instructions in docker-deployer repository
+```
